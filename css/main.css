@@ -4,4 +4,12 @@ body {
 
 .menu{
 	background-color: #f65947;
+	font-size:12px;
+	color:#fefefe;
+}
+
+
+.menu a:hover{
+
+	color:#c65947;
 }
