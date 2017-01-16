@@ -1,0 +1,272 @@
+body, html { 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+}
+h1{
+	font-size:14px;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+
+/* Top Nav */
+header {
+    background: #f5b335;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+   
+}
+
+
+.nav-up {
+    top: 40px;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img/background.jpg");
+
+    /* Set a specific height */
+    height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+     perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    -webkit-clip-path: polygon(0 85%, 100% 100%, 100% 0, 0 0);
+clip-path: polygon(0 85%, 100% 100%, 100% 0, 0 0);
+}
+
+.caption{
+  margin-top:20%;
+  margin-left:10%;
+  display: block;
+  width:30%;
+}
+
+.parallax h1{
+  color:#EF7965;
+  font-size:6em;
+  font-weight:100;
+  letter-spacing: 2px;
+  line-height: 100px;
+}
+
+.parallax div {
+color:white;
+}
+
+.parallax p{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size:1em;
+    line-height: 30px;
+}
+
+
+.content{
+font-size: 14px;
+width:50%;
+margin: 10% 0 10% 10%;
+line-height: 25px;
+
+}
+
+#explorebutton{
+  border:3px solid white;
+  color:white;
+  font-size:15px;
+  font-weight: 600;
+  padding:10px;
+  width:200px;
+}
+
+.parallax_background{
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+}
+
+.back {
+	transform: translateZ(-1px) scale(2);
+  	max-width:200px;
+  	width: 50%;
+  	height:100px;
+  	max-height:600px;
+	margin-top: 70%;
+	margin-left: 60%;
+	border:solid red;
+	background-color: white;
+	color:black;
+	
+	
+
+}
+
+
+
+/* grid */
+.work {
+	margin: 35px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+
+}
+
+.work li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 16.6666667%; /* Fallback */
+	width: -webkit-calc(100% / 4);
+	width: calc(100% / 4);
+
+}
+
+.work li a,
+.work li a img {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+
+}
+
+.work li a img {
+	max-width: 100%;
+
+}
+
+/* Flexbox is used for centering the heading */
+.work li a div {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	 -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+	background: rgba(0,0,0,0.2);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.work li a:hover div {
+	opacity: 1;
+}
+
+.work li a div h3 {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}
+
+
+
+/* work pages*/
+.workbanner{
+    background-image:url("../img/expensebanner.jpg");
+
+    height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.worktitle{}
+
+
+/* Example for media query: change number of items per row */
+
+@media screen and (max-width: 1190px) {
+	.work li {
+		width: 20%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.work li {
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.work li {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.work li {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.work li {
+		width: 50%; /* Fallback */
+		width: -webkit-calc(100% / 1);
+		width: calc(100% / 1);
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.work li {
+		width: 100%;
+	}
+}
