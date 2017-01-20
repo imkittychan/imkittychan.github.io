@@ -15,18 +15,20 @@ a{
 
 /* Top Nav */
 header {
-    background: #f5b335;
-    height: 40px;
+	border:solid blue;
+    background: #414141;
+    height: 100px;
     position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
+    top: -40;
     width: 100%;
-   
+  
+
 }
 
-
 .nav-up {
-    top: 40px;
+    top: -40px;
+    transition: top 0.8s ease-in;
+ 
 }
 
 
@@ -49,7 +51,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
-     perspective: 1px;
+    perspective: 1px;
     overflow-x: hidden;
     overflow-y: auto;
 
