@@ -15,6 +15,7 @@ a{
 
 /* Top Nav */
 header {
+	z-index: 1;
 	border:solid blue;
     background: #414141;
     height: 100px;
