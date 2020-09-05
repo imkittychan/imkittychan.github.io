@@ -70,7 +70,32 @@ body, html {
   }
   
   
-  
+@media(min-width: 650px) and (max-width: 750px ){
+	h1{
+		font-size: 64px;
+	}
+	h2{
+		font-size: 48px;
+	}
+	p{
+		font-size:24px;
+	}
+			
+}
+
+@media(min-width: 0px) and (max-width: 649px ){
+	h1{
+		font-size: 64px;
+	}
+	h2{
+		font-size: 48px;
+	}
+	p{
+		font-size:24px;
+	}
+		
+}
+
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
@@ -98,3 +123,5 @@ p{
   and (orientation: landscape) {
 
 }
+
+
